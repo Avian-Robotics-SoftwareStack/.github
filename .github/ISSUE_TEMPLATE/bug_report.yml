@@ -1,0 +1,67 @@
+name: "Bug Report"
+description: "Report a problem or unexpected behavior"
+title: "[Bug] <Short description>"
+labels: ["bug"]
+assignees: []
+
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: One sentence - What went wrong? 
+      placeholder: "App crashes on login"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Minimal reproducible steps
+      placeholder: |
+        1. Go to …
+        2. Click …
+        3. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What should have happened instead?
+      placeholder: "User is logged in successfully"
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened? Include error messages/logs if available.
+      placeholder: "App throws 500 error"
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Browser/App version, Device
+      placeholder: "Ubuntu 22.04, Chrome 123, Raspberry Pi 4B"
+
+  - type: checkboxes
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Provide any supporting evidence
+      options:
+        - label: "Screenshot(s) or log output attached"
+        - label: "Steps verified in staging/dev (if applicable)"
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context (Optional)
+      description: Any other notes, related issues, or links

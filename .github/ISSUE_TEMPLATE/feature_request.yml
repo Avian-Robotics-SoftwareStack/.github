@@ -1,0 +1,56 @@
+name: "Feature Request"
+description: "Suggest an idea or enhancement"
+title: "[Feature] <Short description>"
+labels: ["feature-request"]
+assignees: []
+
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: One sentence — what do you want added or improved?
+      placeholder: "Add dark mode support"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / Motivation
+      description: What issue or need does this solve?
+      placeholder: "Users find the current UI too bright at night"
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Clear description of the desired solution or behavior
+      placeholder: "Implement a dark mode toggle in settings"
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives (Optional)
+      description: Other approaches you’ve considered
+      placeholder: "Use browser extensions to invert colors"
+
+  - type: checkboxes
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: Mark what needs to be satisfied for completion
+      options:
+        - label: "Clear definition of done"
+        - label: "Test coverage / validation noted"
+        - label: "UX/Dev handoff clarified (if needed)"
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context (Optional)
+      description: Links, screenshots, or other supporting notes
