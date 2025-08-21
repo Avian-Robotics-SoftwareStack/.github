@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://drive.google.com/drive/u/0/folders/0AFE4P66htCn6Uk9PVA
+    about: Please check our docs before opening an issue.
+  - name: Support
+    url: mailto:support@avian-iot.com
+    about: For general questions or troubleshooting help, contact support.
