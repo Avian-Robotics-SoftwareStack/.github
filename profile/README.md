@@ -50,7 +50,7 @@ We collaborate with:
 
 ## 📬 Get in Touch
 - **Support:** [support@avian-iot.com](mailto:support@avian-iot.com)  
-- **Sales & Partnerships:** [sales@avian-iot.com](mailto:hello@avian-iot.com)  
+- **Sales & Partnerships:** [hello@avian-iot.com](mailto:hello@avian-iot.com)  
 - **General Inquiries:** [info@avian-iot.com](mailto:info@avian-iot.com)  
 
 ---
