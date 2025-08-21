@@ -1,7 +1,8 @@
 name: "Bug Report"
 description: "Report a problem or unexpected behavior"
 title: "[Bug] <Short description>"
-labels: ["bug"]
+labels: []
+type: "Bug"
 assignees: []
 
 body:

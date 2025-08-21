@@ -1,7 +1,8 @@
 name: "Feature Request"
 description: "Suggest an idea or enhancement"
 title: "[Feature] <Short description>"
-labels: ["feature-request"]
+labels: []
+type: "Feature"
 assignees: []
 
 body:

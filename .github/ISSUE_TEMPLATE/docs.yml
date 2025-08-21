@@ -1,0 +1,52 @@
+name: "Docs Update"
+description: "Request changes or additions to documentation"
+title: "[Docs] <Short Description>"
+labels: []
+type: "Docs"
+assignees: []
+
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: Briefly describe what needs updating or added.
+      placeholder: "Add installation instructions for Raspberry Pi 5"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / Motivation
+      description: Why does this documentation update matter?
+      placeholder: "Developers are confused about setup on new hardware."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: doc_type
+    attributes:
+      label: Type of Documentation
+      options:
+        - User Guide
+        - API Reference
+        - Setup / Installation
+        - Architecture / Design
+        - Compliance / SOC2
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed Update
+      description: What content should be added or changed?
+      placeholder: "Add a section describing the prerequisites for Pi 5 installation."
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context (Optional)
+      description: Links, screenshots, or references to related issues/PRs.

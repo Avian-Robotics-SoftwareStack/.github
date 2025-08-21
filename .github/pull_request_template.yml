@@ -1,7 +1,7 @@
 name: "Change Request"
 description: "SOC2-compliant change request template"
 title: "[Change Request] <Short Description>"
-labels: ["change-request", "pending-approval"]
+labels: ["pending-approval"]
 assignees: []
 
 body:
