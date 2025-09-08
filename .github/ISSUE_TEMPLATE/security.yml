@@ -1,0 +1,102 @@
+name: "Security Report"
+description: "Report a security vulnerability or weakness"
+title: "[Security] <Short description>"
+labels: ["security"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Do not include exploit code, secrets, or live data in this public issue.**
+        If private disclosure is required, follow **SECURITY.md** or email **security@yourdomain.com**.
+
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: One sentence — what is the vulnerability?
+      placeholder: "Unauthenticated API endpoint allows device configuration changes"
+    validations:
+      required: true
+
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity (self-assessed)
+      options:
+        - Critical (9.0–10.0)
+        - High (7.0–8.9)
+        - Medium (4.0–6.9)
+        - Low (0.1–3.9)
+        - Informational (0.0)
+    validations:
+      required: true
+
+  - type: input
+    id: cvss
+    attributes:
+      label: CVSS v3.1 Vector (optional)
+      description: Include base vector and score if known
+      placeholder: "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:M (9.1)"
+
+  - type: input
+    id: cwe
+    attributes:
+      label: CWE (optional)
+      placeholder: "CWE-287: Improper Authentication"
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: What can an attacker achieve? (e.g., data exposure, RCE, privilege escalation, DoS)
+      placeholder: "Unauthenticated users can download logs containing device credentials."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction Steps / Proof of Concept
+      description: Minimal steps to trigger the issue. Avoid pasting secrets or live exploits.
+      placeholder: |
+        1. Send GET /api/v1/devices/:id/config without auth
+        2. Observe 200 OK with configuration payload
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Affected environments/tenants, % of users/devices, preconditions
+      placeholder: "All production devices on Ubuntu 22.04 with firmware <= 3.2.0"
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence (redact sensitive data)
+      description: Logs, screenshots, packet captures, or stack traces
+      placeholder: "Relevant log lines and sanitized request/response pairs…"
+
+  - type: textarea
+    id: mitigations
+    attributes:
+      label: Workarounds / Mitigations
+      placeholder: "Disable endpoint X; rotate token Y; apply firewall rule Z."
+
+  - type: textarea
+    id: fix
+    attributes:
+      label: Suggested Fix / Code Pointers
+      placeholder: "Validate JWT in gateway; enforce RBAC in handler.go#L120."
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      placeholder: "Related issues, commits, research links"
+
+
