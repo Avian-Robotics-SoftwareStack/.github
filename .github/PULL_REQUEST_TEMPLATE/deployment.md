@@ -1,55 +1,42 @@
 # Deployment: dev → prod
 
-<!-- Brief description and links -->
-**Summary**
-- What’s being promoted and why:
-- Related issues/PRs:
-Closes #<issue number>
+<!-- Make sure to adjust the title of the PR to '[deploy] short description' -->
 
-**Change Type**
-- [ ] Standard (planned, tested)
-- [ ] Emergency (urgent, expedited)
+## Summary
 
-**Risk & Impact**
-- [ ] Reviewed for security impact
-- [ ] Reviewed for user/ops impact
-- [ ] No material impact identified
-- [ ] Requires downtime
-- [ ] Requires data migration
-- [ ] Requires manual steps post-deployment
-- [ ] Requires stakeholder comms
+<!-- What is being deployed and why? Provide a clear, concise explanation. -->
 
-**Impact Notes**
-- Components affected / risks:
+## Related Issues/PRs
 
-## Rollout & Validation
-- [ ] Rollout plan documented
-- [ ] Rollback plan documented
-- [ ] Tested in staging/dev (attach evidence links)
-- [ ] Monitoring/alarms in place
-- [ ] Stakeholder comms prepared
+<!-- Add links to any related issues or pull requests here -->
 
-**Deployment Plan**
-1. …
-2. …
-Or link to Google Doc with detailed steps
+- **Closes:** #<issue-number>
 
-**Change Window (Europe/Zurich)**
-- Start: `YYYY-MM-DDTHH:MM:SS+02:00`
-- End:   `YYYY-MM-DDTHH:MM:SS+02:00`
-- Planned Deployment Date: `YYYY-MM-DD`
 
-**Validation Evidence**
-- CI run(s):
-- Dashboards/logs:
+## Checklist
 
-## Approvals
-- [ ] Requester
-- [ ] Team Lead
-- [ ] Security/CTO (if required)
+<!-- Make sure to follow this checklist and mark the tasks as done. -->
 
-**Rollback Plan**
-- Exact steps and data considerations:
+- [ ] I have checked the changed files and made sure no unrelated components are touched.
+- [ ] I have reviewed the CI runs and they are all successful.
+- [ ] I have updated any necessary documentation.
+- [ ] I have tested these changes in the `develop` environment.
 
-**Additional Notes**
-- Links, diagrams, dashboards, comms:
+
+## Deployment Plan
+
+<!-- Depending on the affected components, describe the required rollout-->
+
+1. Merge this PR from `develop` into `main`
+
+
+<!-- Uncomment this section if a rollback plan is appropriate -->
+
+<!--
+
+## Rollback Plan
+
+1.
+2.
+
+-->

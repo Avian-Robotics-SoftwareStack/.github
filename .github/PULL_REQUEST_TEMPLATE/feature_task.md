@@ -1,46 +1,36 @@
 # Feature/Docs/Task: fb → dev
 
-**Summary**
-- What changed and why:
-- Related issue/epic:
+<!-- Make sure to adjust the title of the PR to '[feature/docs/task] short description' -->
 
-**Work Type**
-- [ ] Feature
-- [ ] Bugfix
-- [ ] Docs
-- [ ] Chore/Task
+## Summary
 
-**Scope / Components**
-- Services/packages touched:
-- Migrations/flags/config:
+<!-- What is being deployed and why? Provide a clear, concise explanation. -->
 
-**Testing & Evidence**
-- [ ] Unit/Integration tests added/updated
-- [ ] Local/manual validation done
-- [ ] CI green (link artifacts)
-- [ ] Backward compatible (API/DB)
+## Related Issues
 
-**Evidence Links**
-- CI run(s), screenshots, logs:
+<!-- Add links to any related issues here -->
 
-**Risk & Impact**
-- [ ] Reviewed for security impact
-- [ ] Reviewed for user/ops impact
-- [ ] No material impact identified
+- **Closes:** #<issue-number>
 
-**Security/Privacy Notes**
-- Data access, secrets, PII, auth changes:
 
-**Rollout Notes (if applicable)**
-- Flags/config/doc updates:
+## Key Changes
 
-**Implementation Details**
-- Brief technical approach or design doc link:
+<!-- Describe the key changes made in this PR -->
 
-## Approvals
-- [ ] Requester
-- [ ] Team Lead
-- [ ] Security/CTO (if required)
+-
+-
 
-**Additional Notes**
-- Anything else for reviewers:
+
+## Checklist
+
+<!-- Make sure to follow this checklist and mark the tasks as done. -->
+
+- [ ] My changes are covered by new or updated tests.
+- [ ] I have updated the documentation.
+- [ ] I have considered the security and performance implications of my changes.
+- [ ] The CI pipeline is passing.
+
+
+## Implementation & Testing Notes
+
+<!-- Provide details of how the changes were implemented and how they can be tested -->
