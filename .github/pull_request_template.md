@@ -2,3 +2,4 @@ Use the 'Preview' tab above the editing area to select the appropriate sub-templ
 
 * [Feature Task](?expand=1&template=feature_task.md)
 * [Deployment](?expand=1&template=deployment.md)
+* [Bug/Hot Fix](?expand=1&template=bug_hot_fix.md)

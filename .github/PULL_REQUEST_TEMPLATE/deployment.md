@@ -10,7 +10,7 @@
 
 <!-- Add links to any related issues or pull requests here -->
 
-- **Closes:** #<issue-number>
+- Closes #<issue-number>
 
 
 ## Checklist
