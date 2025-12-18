@@ -10,7 +10,7 @@
 
 <!-- Add links to any related issues here -->
 
-- **Closes:** #<issue-number>
+- Closes #<issue-number>
 
 
 ## Key Changes
